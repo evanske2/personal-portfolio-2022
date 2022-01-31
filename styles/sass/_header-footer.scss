@@ -1,0 +1,123 @@
+header {
+  position: relative;
+  height: 70vh;
+  background-color: pink;
+}
+
+// main navigation
+
+.nav-links {
+  position: absolute;
+  top: 20px;
+  width: 60%;
+  height: 10vh;
+  background-color: peachpuff;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  padding-left: 4vw;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 50%;
+    position: relative;
+
+    p {
+      font-family: 'Eczar', serif;
+      font-size: 2rem;
+      line-height: 0.75;
+      letter-spacing: 2px;
+
+    } 
+    
+    .highlighter-logo::before {
+      content: '';
+      width: 140px;
+      height: 18px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0px;
+      left: -10px;
+      z-index: -10;
+      background-color: #f5b073;
+    }
+  }
+  
+  ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    
+    a {
+      font-family: 'Courier Prime', monospace;
+      font-style: italic;
+    }
+  }
+}
+
+// contact navigation
+
+.contact-links {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  background-color: peachpuff;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+  }
+}
+
+// scrolling text
+
+.scrolling-text-container {
+  overflow: hidden;
+  color: whitesmoke;
+  letter-spacing: 5px;
+
+  .scrolling-text {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: scrolling-text-animation 15s linear infinite;
+    -webkit-animation: scrolling-text-animation 15s linear infinite;
+    animation: scrolling-text-animation 15s linear infinite;
+  }
+
+  // Firefox
+  @-moz-keyframes scrolling-text-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+
+  // Chrome
+  @-webkit-keyframes scrolling-text-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+
+  @keyframes scrolling-text-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+}

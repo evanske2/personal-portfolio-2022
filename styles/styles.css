@@ -1,0 +1,504 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+}
+
+.skip-link:focus {
+  left: 50px;
+}
+
+html {
+  font-size: 125%;
+  /* 16px * 1.25 = 20px */
+}
+
+body {
+  border-top: 20px solid white;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: #302c2c;
+}
+
+h1,
+h2 {
+  font-family: "Eczar", serif;
+  line-height: 1;
+}
+
+.border-wrapper {
+  border-left: 4vw solid white;
+  border-right: 4vw solid white;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skip-link {
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.ghost-text {
+  z-index: -10;
+}
+.ghost-text p {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+  -webkit-text-stroke: 2px whitesmoke;
+  -webkit-text-fill-color: white;
+  text-transform: uppercase;
+  letter-spacing: 40px;
+}
+.ghost-text p span {
+  display: inline-block;
+  width: 12%;
+}
+.ghost-text p span span.skinny {
+  width: 5%;
+}
+
+header {
+  position: relative;
+  height: 70vh;
+  background-color: pink;
+}
+
+.nav-links {
+  position: absolute;
+  top: 20px;
+  width: 60%;
+  height: 10vh;
+  background-color: peachpuff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  padding-left: 4vw;
+}
+.nav-links .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-links .logo {
+  width: 50%;
+  position: relative;
+}
+.nav-links .logo p {
+  font-family: "Eczar", serif;
+  font-size: 2rem;
+  line-height: 0.75;
+  letter-spacing: 2px;
+}
+.nav-links .logo .highlighter-logo::before {
+  content: "";
+  width: 140px;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: -10px;
+  z-index: -10;
+  background-color: #f5b073;
+}
+.nav-links ul {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.nav-links ul a {
+  font-family: "Courier Prime", monospace;
+  font-style: italic;
+}
+
+.contact-links {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  background-color: peachpuff;
+}
+.contact-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-links ul i {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+.scrolling-text-container {
+  overflow: hidden;
+  color: whitesmoke;
+  letter-spacing: 5px;
+}
+.scrolling-text-container .scrolling-text {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-animation: scrolling-text-animation 15s linear infinite;
+  animation: scrolling-text-animation 15s linear infinite;
+}
+@-webkit-keyframes scrolling-text-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes scrolling-text-animation {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.icon-container {
+  position: relative;
+}
+.icon-container h2 {
+  padding-left: 2vw;
+  display: inline-block;
+  position: relative;
+}
+.icon-container .highlighter::before {
+  background-color: #f5b073;
+  content: "";
+  width: 100%;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  z-index: -10;
+}
+
+.tech-icons,
+.design-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0;
+}
+.tech-icons .icon-item,
+.design-icons .icon-item {
+  width: 20%;
+  text-align: center;
+  height: 160px;
+}
+.tech-icons .icon-item i,
+.design-icons .icon-item i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.tech-icons h3,
+.design-icons h3 {
+  font-family: "Courier Prime", monospace;
+  font-style: italic;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.skills-section {
+  position: relative;
+  margin-top: 70px;
+}
+
+/* Big screens */
+/* Desktops */
+/* Small desktops */
+/* Large tablet */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */

@@ -1,0 +1,76 @@
+@import "setup";
+@import "variables";
+@import "universal-styles";
+@import "header-footer";
+
+
+// icon container
+
+.icon-container {
+  position: relative;
+  
+  h2 {
+    padding-left: 2vw;
+    display: inline-block;
+    position: relative;
+  }
+
+// text highlighter
+
+  .highlighter::before {
+    background-color: #f5b073;
+    content: '';
+    width: 100%;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    z-index: -10;
+  }
+}
+
+.tech-icons,
+.design-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+
+  .icon-item {
+    width: 20%;
+    text-align: center;
+    height: 160px;
+
+    i {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+  }
+
+  h3 {
+    font-family: 'Courier Prime', monospace;
+    font-style: italic;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    font-weight: 100;
+  }
+}
+
+
+.skills-section {
+  position: relative;
+  margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+@import "media-queries";
