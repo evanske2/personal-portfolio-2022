@@ -1,0 +1,28 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+  border: none;
+  max-width: 600px;
+
+  label {
+    font-family: 'Courier Prime', monospace;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: $dark-orange;
+  }
+
+  input {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: none;
+    background-color: $light-orange;
+
+    &::placeholder {
+      font-family: 'Lato', sans-serif;
+      color: $black;
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -66,12 +66,38 @@
 
   <main>
 
-    <section class="about-me">
-      <div class="wrapper">
+    <section class="wrapper about-me">
+      
         <div class="ghost-text">
           <p>About</p>
         </div>
-      </div>
+
+        <div class="introduction">
+          <div class="introduction-text">
+            <h2 class="highlighter">Nice to meet you!</h2>
+            <p>I am a front-end developer with a passion for continuous growth. With a full chapter as a visual designer behind me, I bring critical-thinking, client-side communication skills and an eye for detail to create responsive and accessible experiences online. My passion for learning along with my background in design allows me to approach development projects with an open mind, an ability to adapt to new situations and work collaboratively between design and development teams.</p>
+            <div class="formula-for-success">
+              <i class="fas fa-swatchbook"></i>
+              <span><i class="fas fa-plus"></i></span>
+              <i class="fas fa-file-code"></i>
+              <span><i class="fas fa-equals"></i></span>
+              <i class="fas fa-grin-hearts"></i>
+            </div>
+          </div>
+
+          <div class="image-collage">
+            <div class="image-1">
+              <img src="./assets/paint-texture.jpg" alt="">
+            </div>
+            <!-- <div class="image-2">
+              <img src="./assets/sand-texture.jpg" alt="">
+            </div> -->
+            <div class="image-3">
+              <img src="./assets/number-texture.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
     </section>
 
     <!-- <section class="facts">
@@ -96,6 +122,60 @@
         </li>
       </ul>
     </section> -->
+
+    <section class="wrapper projects">
+      
+      <div class="ghost-text">
+        <p>Work</p>
+      </div>
+
+      <div class="all-projects">
+        <h2 class="highlighter">Recent Work</h2>
+
+        <article class="single-project">
+          <figure>
+            <img src="https://placebear.com/300/300" alt="">
+          </figure>
+          <div>
+            <h3>Page Turners</h3>
+            <h4>Google Books API, React, Firebase, HTML, SCSS</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium, recusandae eum ipsum unde nihil,
+              asperiores rerum hic atque error doloribus necessitatibus odio inventore fuga adipisci. Sint eaque sunt nemo!</p>
+            <a href="https://murder-page-turners.netlify.app/" target="blank" rel="noreferrer">Live link</a>
+            <a href="https://github.com/best-page-turners/project-four" target="blank" rel="noreferrer">Git repo</a>
+          </div>
+        </article>
+        
+        <article class="single-project row-reverse">
+          <figure>
+            <img src="https://placebear.com/300/300" alt="">
+          </figure>
+          <div>
+            <h3>Character Comic Collector</h3>
+            <h4>Marvel Comics API, React, HTML, CSS</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium, recusandae eum ipsum unde nihil, asperiores rerum hic atque error doloribus necessitatibus odio inventore fuga adipisci. Sint eaque sunt nemo!</p>
+            <a href="https://character-comic-collector.netlify.app/" target="blank" rel="noreferrer">Live link</a>
+            <a href="https://github.com/evanske2/karen-evans-project-three" target="blank" rel="noreferrer">Git repo</a>
+          </div>
+        </article>
+
+        <article class="single-project">
+          <figure>
+            <img src="https://placebear.com/300/300" alt="">
+          </figure>
+          <div>
+            <h3>Choose Your Pokémon App</h3>
+            <h4>Pokémon API, JavaScript, HTML, CSS</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit laudantium, recusandae eum ipsum unde nihil,
+              asperiores rerum hic atque error doloribus necessitatibus odio inventore fuga adipisci. Sint eaque sunt nemo!</p>
+            <a href="https://felicia-nemet-karen-evans-project-two.github.io/choose-your-pokemon-app/" target="blank" rel="noreferrer">Live link</a>
+            <a href="https://github.com/felicia-nemet-karen-evans-project-two/choose-your-pokemon-app" target="blank" rel="noreferrer">Git repo</a>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
 
     <section class="wrapper skills-section">
       <div class="ghost-text">
@@ -179,6 +259,29 @@
     <section class="wrapper get-in-touch">
       <div class="ghost-text">
         <p>Contact</p>
+      </div>
+      
+      <div class="contact-form-container">
+        <h2 class="highlighter">Get in touch!</h2>
+
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myyoejwq"
+          method="post">
+          <fieldset class="contact-form" id="fs-frm-inputs">
+            <label for="full-name">Your Name</label>
+            <input type="text" name="name" id="full-name" placeholder="Name" required="">
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@website.com" required="">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message" placeholder="What's up?" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </fieldset>
+          <input type="submit" value="Send It!">
+        </form>
+
+        <!-- <div>
+          <p>Reach out</p>
+        </div> -->
+
       </div>
     </section>
 

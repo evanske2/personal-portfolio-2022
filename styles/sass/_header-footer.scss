@@ -10,12 +10,12 @@ header {
   position: absolute;
   top: 20px;
   width: 60%;
-  height: 10vh;
-  background-color: peachpuff;
+  background-color: $peach;
   display: flex;
   align-items: center;
   z-index: 10;
   padding-left: 4vw;
+  padding-bottom: 8px;
 
   .wrapper {
     display: flex;
@@ -44,7 +44,7 @@ header {
       bottom: 0px;
       left: -10px;
       z-index: -10;
-      background-color: #f5b073;
+      background-color: $dark-orange;
     }
   }
   
@@ -52,6 +52,7 @@ header {
     width: 50%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: -8px;
     
     a {
       font-family: 'Courier Prime', monospace;

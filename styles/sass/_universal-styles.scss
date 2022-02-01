@@ -3,8 +3,9 @@ html {
 }
 
 body {
-  border-top: 20px solid white;
+  border-top: 20px solid $linen;
   position: relative;
+  background-color: $linen;
 }
 
 h1,
@@ -18,19 +19,43 @@ a {
   color: $black;
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
 h1,
 h2 {
   font-family: "Eczar", serif;
   line-height: 1;
 }
 
+h2 {
+  padding-left: 1vw;
+  display: inline-block;
+  position: relative;
+}
+
+.highlighter::before {
+  background-color: $peach;
+  content: '';
+  width: 100%;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  z-index: -10;
+}
+
 .border-wrapper {
-  border-left: 4vw solid white;
-  border-right: 4vw solid white;
+  border-left: 4vw solid $linen;
+  border-right: 4vw solid $linen;
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1100px;
   width: 90%;
   margin: 0 auto;
 }
@@ -42,23 +67,33 @@ h2 {
   padding: 10px 20px;
   margin-top: 20px;
   text-align: center;
+  z-index: 100;
 }
 
 li {
   list-style-type: none;
 }
 
+.about-me,
+.projects,
+.skills,
+.get-in-touch {
+  margin: 70px auto;
+  padding-bottom: 40px;
+}
+
 .ghost-text {
   z-index: -10;
+  margin-top: -10px;
 
   p {
-    font-family: 'Lato', sans-serif;
     font-weight: 900;
-    font-size: 5rem;    
-    -webkit-text-stroke: 2px whitesmoke;
-    -webkit-text-fill-color: white;
+    font-size: 4rem;    
+    -webkit-text-stroke: 2px lighten($peach, 6);
+    -webkit-text-fill-color: $linen;
     text-transform: uppercase;
     letter-spacing: 40px;
+    margin-left: -20px;
 
     span {
       display: inline-block;
@@ -69,4 +104,9 @@ li {
       }
     }
   }
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
 }
