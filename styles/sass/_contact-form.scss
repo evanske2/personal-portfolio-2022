@@ -1,28 +1,73 @@
+.contact-form-container {
+  display: flex;
+  align-items: center;
+
+  form {
+    width: 60%;
+  }
+
+  .contact-text {
+    width: 40%;
+
+    p {
+      line-height: 1.5;
+      margin-top: 15px;
+    }
+
+    
+  }
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
-  margin: 40px 0;
+  margin-top: 40px;
   border: none;
   max-width: 600px;
 
   label {
-    font-family: 'Courier Prime', monospace;
+    font-family: $special-font;
     font-style: italic;
     font-size: 0.8rem;
-    color: $dark-orange;
+    color: $brown;
   }
 
-  input {
+  input,
+  textarea {
     padding: 5px 10px;
     margin-bottom: 20px;
     margin-top: 5px;
     border: none;
-    background-color: $light-orange;
+    background-color: lighten($light-orange, 5);
+    font-family: $base-font;
+    font-size: 0.8rem;
+    color: darken($brown, 10);
+    resize: none;
 
     &::placeholder {
-      font-family: 'Lato', sans-serif;
-      color: $black;
-      font-size: 0.8rem;
+      color: $brown;    
     }
   }
+
+  textarea {
+    padding-top: 10px;
+  }
 }
+
+.submit-button {
+    border: none;
+    padding: 6px 20px 4px 20px;
+    font-family: $special-font;
+    font-style: italic;
+    font-size: 1rem;
+    color: white;
+    background-color: $brown;
+    margin-left: 20px;
+    align-self: flex-end;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: darken($brown, 5);
+    }
+  }

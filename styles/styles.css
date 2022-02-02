@@ -274,7 +274,7 @@ a {
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 0.9rem;
 }
@@ -354,6 +354,14 @@ li {
   width: 5%;
 }
 
+.bold-link a {
+  font-weight: 600;
+  color: peru;
+}
+.bold-link a:hover, .bold-link a:focus {
+  color: #c07832;
+}
+
 .row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -367,7 +375,7 @@ li {
 header {
   position: relative;
   height: 70vh;
-  background-color: pink;
+  background-color: antiquewhite;
 }
 
 .nav-links {
@@ -428,8 +436,8 @@ header {
   margin-bottom: -8px;
 }
 .nav-links ul a {
-  font-family: "Courier Prime", monospace;
-  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
 }
 
 .contact-links {
@@ -481,55 +489,179 @@ header {
   }
 }
 
-.contact-form {
+footer {
+  background-color: peru;
+  padding: 30px 0;
+  text-align: center;
+}
+footer p {
+  color: #f5b073;
+  font-family: "Courier Prime", monospace;
+}
+
+.single-project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 40px 0;
-  border: none;
-  max-width: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  margin: auto;
 }
-.contact-form label {
+.single-project figure {
+  width: 250px;
+  height: 250px;
+}
+.single-project figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  max-width: 100%;
+}
+.single-project h3,
+.single-project h4 {
+  letter-spacing: 4px;
+}
+.single-project h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: peru;
+}
+.single-project h4 {
   font-family: "Courier Prime", monospace;
-  font-style: italic;
   font-size: 0.8rem;
+  font-style: italic;
   color: #f5b073;
 }
-.contact-form input {
-  padding: 5px 10px;
-  margin-bottom: 20px;
-  margin-top: 5px;
-  border: none;
-  background-color: #fadfb5;
-}
-.contact-form input::-webkit-input-placeholder {
-  font-family: "Lato", sans-serif;
-  color: #302c2c;
+.single-project p {
+  max-width: 500px;
+  margin: 20px 0;
+  line-height: 1.5;
   font-size: 0.8rem;
 }
-.contact-form input::-moz-placeholder {
-  font-family: "Lato", sans-serif;
-  color: #302c2c;
-  font-size: 0.8rem;
+.single-project a {
+  font-family: "Courier Prime", monospace;
+  font-size: 0.7rem;
+  text-decoration: none;
+  padding-right: 20px;
+  position: relative;
 }
-.contact-form input:-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-  color: #302c2c;
-  font-size: 0.8rem;
+.single-project a:hover::before, .single-project a:focus::before {
+  content: "";
+  background-color: peachpuff;
+  width: 90%;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: -5px;
+  z-index: -10;
 }
-.contact-form input::-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-  color: #302c2c;
-  font-size: 0.8rem;
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.contact-form input::placeholder {
-  font-family: "Lato", sans-serif;
-  color: #302c2c;
-  font-size: 0.8rem;
+.introduction p {
+  padding-left: 1vw;
+  margin: 20px 0;
+  line-height: 1.5;
+  max-width: 660px;
+}
+
+.formula-for-success {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1vw;
+  margin-top: 40px;
+  color: peachpuff;
+}
+.formula-for-success i {
+  padding: 0 10px;
+}
+.formula-for-success span {
+  font-size: 1.2rem;
+}
+
+.image-collage {
+  position: relative;
+  margin-left: 120px;
+}
+.image-collage .image-1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  z-index: -10;
+}
+.image-collage .image-2 {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -62px;
+  right: 150px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  mix-blend-mode: luminosity;
+}
+.image-collage .image-3 {
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+  position: absolute;
+  top: 130px;
+  right: -90px;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  mix-blend-mode: darken;
+  opacity: 0.9;
+}
+.image-collage .image-4 {
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  position: absolute;
+  top: 210px;
+  right: 20px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  opacity: 0.8;
+}
+.image-collage .image-4 img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.image-collage .image-5 {
+  width: 70px;
+  height: 70px;
+  z-index: 10;
+  position: absolute;
+  top: 105px;
+  right: 270px;
+  -webkit-transform: rotate(10deg);
+  transform: rotate(-5deg);
+}
+.image-collage .image-5 img {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+.image-collage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 
 .icon-container {
@@ -574,12 +706,7 @@ header {
   color: peru;
 }
 
-.skills-section {
-  position: relative;
-  margin-top: 70px;
-}
-
-.introduction {
+.contact-form-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,134 +714,82 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.introduction p {
-  padding-left: 1vw;
-  margin: 20px 0;
+.contact-form-container form {
+  width: 60%;
+}
+.contact-form-container .contact-text {
+  width: 40%;
+}
+.contact-form-container .contact-text p {
   line-height: 1.5;
-  max-width: 660px;
+  margin-top: 15px;
 }
 
-.formula-for-success {
-  font-size: 2rem;
+.contact-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 1vw;
-  color: peachpuff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 40px;
+  border: none;
+  max-width: 600px;
 }
-.formula-for-success i {
-  padding: 0 10px;
-}
-.formula-for-success span {
-  font-size: 1.2rem;
-}
-
-.image-collage {
-  position: relative;
-  margin-left: 120px;
-}
-.image-collage img {
-  width: 100%;
-  height: 100%;
-}
-.image-collage .image-1 {
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
-  z-index: -10;
-}
-.image-collage .image-1 img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-}
-.image-collage .image-2 {
-  width: 200px;
-  height: 175px;
-  position: absolute;
-  z-index: -20;
-}
-.image-collage .image-2 img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.image-collage .image-3 {
-  width: 180px;
-  height: 180px;
-  z-index: 10;
-  position: absolute;
-  top: 90px;
-  right: -60px;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-  mix-blend-mode: darken;
-}
-.image-collage .image-3 img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-}
-
-.single-project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1100px;
-  margin: auto;
-}
-.single-project figure {
-  width: 250px;
-  height: 250px;
-}
-.single-project figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  max-width: 100%;
-}
-.single-project h3,
-.single-project h4 {
+.contact-form label {
   font-family: "Courier Prime", monospace;
-  letter-spacing: 4px;
-  font-weight: 100;
+  font-style: italic;
+  font-size: 0.8rem;
   color: peru;
 }
-.single-project h3 {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-.single-project h4 {
+.contact-form input,
+.contact-form textarea {
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  border: none;
+  background-color: #fce9cd;
+  font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
-  font-style: italic;
+  color: #ac6c2d;
+  resize: none;
 }
-.single-project p {
-  max-width: 500px;
-  margin: 20px 0;
-  line-height: 1.5;
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {
+  color: peru;
 }
-.single-project a {
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {
+  color: peru;
+}
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {
+  color: peru;
+}
+.contact-form input::-ms-input-placeholder, .contact-form textarea::-ms-input-placeholder {
+  color: peru;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: peru;
+}
+.contact-form textarea {
+  padding-top: 10px;
+}
+
+.submit-button {
+  border: none;
+  padding: 6px 20px 4px 20px;
   font-family: "Courier Prime", monospace;
-  font-size: 0.7rem;
-  text-decoration: none;
-  padding-right: 20px;
-  position: relative;
+  font-style: italic;
+  font-size: 1rem;
+  color: white;
+  background-color: peru;
+  margin-left: 20px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
-.single-project a:hover::before, .single-project a:focus::before {
-  content: "";
-  background-color: peachpuff;
-  width: 90%;
-  height: 10px;
-  display: inline-block;
-  position: absolute;
-  bottom: 0px;
-  left: -5px;
-  z-index: -10;
+.submit-button:hover, .submit-button:focus {
+  cursor: pointer;
+  background-color: #c07832;
 }
 
 /* Big screens */

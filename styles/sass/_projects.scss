@@ -1,0 +1,66 @@
+.single-project {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+
+  figure {
+
+    width: 250px;
+    height: 250px;
+
+    img {
+      object-fit: cover;
+      border-radius: 50%;
+      max-width: 100%;
+    }
+  }
+
+  h3,
+  h4 {    
+    letter-spacing: 4px;
+  }
+
+  h3 {
+    font-family: $base-font;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: $brown;
+  }
+
+  h4 {
+    font-family: $special-font;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: $dark-orange;
+  }
+
+  p {
+    max-width: 500px;
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 0.8rem;
+  }
+
+  a {
+    font-family: $special-font;
+    font-size: 0.7rem;
+    text-decoration: none;
+    padding-right: 20px;
+    position: relative;
+
+    &:hover::before,
+    &:focus::before {
+      content: '';
+      background-color: $peach;
+      width: 90%;
+      height: 10px;
+      display: inline-block;
+      position: absolute;
+      bottom: 0px;
+      left: -5px;
+      z-index: -10;
+    }
+  }
+}

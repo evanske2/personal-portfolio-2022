@@ -20,14 +20,14 @@ a {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: $base-font;
   font-weight: 300;
   font-size: 0.9rem;
 }
 
 h1,
 h2 {
-  font-family: "Eczar", serif;
+  font-family: $heading-font;
   line-height: 1;
 }
 
@@ -103,6 +103,16 @@ li {
         width: 5%
       }
     }
+  }
+}
+
+.bold-link a {
+  font-weight: 600;
+  color: $brown;
+
+  &:hover,
+  &:focus {
+    color: darken($brown, 5);
   }
 }
 

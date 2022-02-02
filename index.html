@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/9475e78af0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Eczar:wght@700&family=Lato:wght@300;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Eczar:wght@700&family=Poppins:wght@300;600;900&display=swap"
+  rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Kevans Portfolio</title>
 </head>
@@ -23,13 +25,13 @@
       </div>
       <ul class="page-section-links">
         <li>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#">Work</a>
+          <a href="#work">Work</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -37,13 +39,12 @@
 
   <div class="border-wrapper">
     <header>
+
+      <!-- I am a front-end developer with a passion for continuous growth. With a full chapter as a visual designer behind me, I bring critical-thinking, client-side communication skills and an eye for detail to create responsive and accessible experiences online. My passion for learning along with my background in design allows me to approach development projects with an open mind, an ability to adapt to new situations and work collaboratively between design and development teams.</p> -->
     
     
       <nav class="contact-links"> <!-- contact links -->
         <ul>
-          <li>
-            <a href="mailto:evanske2@gmail.com"><span class="sr-only">Email Me!</span><i class="far fa-paper-plane"></i></a>
-          </li>
           <li>
             <a href="https://www.linkedin.com/in/evanske2/" target="_blank"><span class="sr-only">LinkedIn</span><i class="fab fa-linkedin-in"></i></a>
           </li>
@@ -65,40 +66,6 @@
   </div>
 
   <main>
-
-    <section class="wrapper about-me">
-      
-        <div class="ghost-text">
-          <p>About</p>
-        </div>
-
-        <div class="introduction">
-          <div class="introduction-text">
-            <h2 class="highlighter">Nice to meet you!</h2>
-            <p>I am a front-end developer with a passion for continuous growth. With a full chapter as a visual designer behind me, I bring critical-thinking, client-side communication skills and an eye for detail to create responsive and accessible experiences online. My passion for learning along with my background in design allows me to approach development projects with an open mind, an ability to adapt to new situations and work collaboratively between design and development teams.</p>
-            <div class="formula-for-success">
-              <i class="fas fa-swatchbook"></i>
-              <span><i class="fas fa-plus"></i></span>
-              <i class="fas fa-file-code"></i>
-              <span><i class="fas fa-equals"></i></span>
-              <i class="fas fa-grin-hearts"></i>
-            </div>
-          </div>
-
-          <div class="image-collage">
-            <div class="image-1">
-              <img src="./assets/paint-texture.jpg" alt="">
-            </div>
-            <!-- <div class="image-2">
-              <img src="./assets/sand-texture.jpg" alt="">
-            </div> -->
-            <div class="image-3">
-              <img src="./assets/number-texture.jpg" alt="">
-            </div>
-          </div>
-
-        </div>
-    </section>
 
     <!-- <section class="facts">
       <ul>
@@ -123,9 +90,10 @@
       </ul>
     </section> -->
 
+<!-- work section starts -->
     <section class="wrapper projects">
       
-      <div class="ghost-text">
+      <div class="ghost-text" id="work">
         <p>Work</p>
       </div>
 
@@ -176,7 +144,56 @@
       </div>
 
     </section>
+<!-- work section ends -->
 
+<!-- about section starts -->
+    <section class="wrapper about-me">
+
+      <div class="ghost-text" id="about">
+        <p>About</p>
+      </div>
+
+      <div class="introduction">
+        <div class="introduction-text">
+          <h2 class="highlighter">Nice to meet you!</h2>
+          <p> My name is Karen and I'm a front-end developer with a background in art & design. I recently graduated from Juno College's <span class="bold-link"><a href="https://junocollege.com/bootcamp/web-development-toronto/" target="blank" rel="noreferrer">Web Dev Bootcamp</a></span>. Development allows me to combine my love of problem-solving and making things, and with my past experience in design I'm able to approach projects with an open-mind and an eye for details.</p> 
+
+          <p>In my free time I love playing frisbee with my dog Wrigley, Minecraft-ing, regular-crafting, reading and eating pizza.</p>
+
+          <p><span class="bold-link"><a href="https://www.linkedin.com/in/evanske2/" target="blank" rel="noreferrer">Let's connect!</a></span></p>
+            
+          <div class="formula-for-success">
+            <i class="fas fa-swatchbook"></i>
+            <span><i class="fas fa-plus"></i></span>
+            <i class="fas fa-file-code"></i>
+            <span><i class="fas fa-equals"></i></span>
+            <i class="fas fa-grin-hearts"></i>
+          </div>
+        </div>
+
+        <div class="image-collage">
+          <div class="image-1">
+            <img src="./assets/paint-texture.jpg" alt="">
+          </div>
+          <div class="image-2">
+            <img src="./assets/me-4.jpg" alt="">
+          </div>
+          <div class="image-3">
+            <img src="./assets/supervisor.jpg" alt="">
+          </div>
+          <div class="image-4">
+            <img src="./assets/pizza.jpg" alt="">
+          </div>
+          <div class="image-5">
+            <img src="./assets/minecraft-me.jpg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
     <section class="wrapper skills-section">
       <div class="ghost-text">
         <p>Skills</p>
@@ -255,40 +272,51 @@
       </div>
       
     </section>
+<!-- skills section ends -->
 
+<!-- contact section starts -->
     <section class="wrapper get-in-touch">
-      <div class="ghost-text">
+      <div class="ghost-text" id="contact">
         <p>Contact</p>
       </div>
       
-      <div class="contact-form-container">
+      <div>
         <h2 class="highlighter">Get in touch!</h2>
 
-        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myyoejwq"
-          method="post">
-          <fieldset class="contact-form" id="fs-frm-inputs">
-            <label for="full-name">Your Name</label>
-            <input type="text" name="name" id="full-name" placeholder="Name" required="">
-            <label for="email-address">Email Address</label>
-            <input type="email" name="_replyto" id="email-address" placeholder="email@website.com" required="">
-            <label for="message">Message</label>
-            <textarea rows="5" name="message" id="message" placeholder="What's up?" required=""></textarea>
-            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-          </fieldset>
-          <input type="submit" value="Send It!">
-        </form>
+        <div class="contact-form-container">
+          
+          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myyoejwq"
+            method="post">
+            <fieldset class="contact-form" id="fs-frm-inputs">
+              <label for="full-name">Your Name</label>
+              <input type="text" name="name" id="full-name" placeholder="Name" required="">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@website.com" required="">
+              <label for="message">Message</label>
+              <textarea rows="5" name="message" id="message" placeholder="What's up?" required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input class="submit-button" type="submit" value="Send It!">
+          </form>
+          
+          <div class="contact-text">
+            <p>Thanks for scrolling this far!</p> 
+            <p>You can get in touch with me here through the contact form, or catch up with me on <span class="bold-link"><a href="https://www.linkedin.com/in/evanske2/" target="blank" rel="noreferrer">LinkedIn</a></span>.</p>
+            <p> Have a great day!</p>
+          </div>
 
-        <!-- <div>
-          <p>Reach out</p>
-        </div> -->
+        </div>
 
       </div>
     </section>
+<!-- contact section ends -->
 
   </main>
 
   <footer>
-
+    <div class="wrapper">
+      <p>Made up North <i class="fas fa-compass"></i> by Karen Evans</p>
+    </div>
   </footer>
 
 </body>

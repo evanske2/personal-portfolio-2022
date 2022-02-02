@@ -1,7 +1,7 @@
 header {
   position: relative;
   height: 70vh;
-  background-color: pink;
+  background-color: antiquewhite;
 }
 
 // main navigation
@@ -28,7 +28,7 @@ header {
     position: relative;
 
     p {
-      font-family: 'Eczar', serif;
+      font-family: $heading-font;
       font-size: 2rem;
       line-height: 0.75;
       letter-spacing: 2px;
@@ -55,8 +55,8 @@ header {
     margin-bottom: -8px;
     
     a {
-      font-family: 'Courier Prime', monospace;
-      font-style: italic;
+      font-family: $base-font;
+      font-size: 0.9rem;
     }
   }
 }
@@ -120,5 +120,18 @@ header {
       -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
     }
+  }
+}
+
+// footer
+
+footer {
+  background-color: $brown;
+  padding: 30px 0;
+  text-align: center;
+  
+  p {
+    color: $dark-orange;
+    font-family: $special-font;
   }
 }
