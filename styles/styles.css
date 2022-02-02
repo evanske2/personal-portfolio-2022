@@ -507,10 +507,11 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1100px;
-  margin: auto;
+  margin: 50px auto;
 }
 .single-project figure {
-  width: 250px;
+  max-width: 250px;
+  width: 30%;
   height: 250px;
 }
 .single-project figure img {
@@ -518,6 +519,9 @@ footer p {
      object-fit: cover;
   border-radius: 50%;
   max-width: 100%;
+}
+.single-project .project-details {
+  width: 70%;
 }
 .single-project h3,
 .single-project h4 {
@@ -537,7 +541,6 @@ footer p {
   color: #f5b073;
 }
 .single-project p {
-  max-width: 500px;
   margin: 20px 0;
   line-height: 1.5;
   font-size: 0.8rem;
