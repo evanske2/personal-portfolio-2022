@@ -159,7 +159,12 @@
     margin-left: -10px;
   }
 
-  .introduction p {
-    padding-right: 0;
-  }
+  .introduction {
+  
+    h2 {
+      padding-top: 10px;
+    }
+    p {
+      padding-right: 0;
+    }
 }
