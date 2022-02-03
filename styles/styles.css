@@ -652,6 +652,9 @@ footer p {
   line-height: 1.5;
   max-width: 660px;
 }
+.introduction h2 {
+  padding-top: 10px;
+}
 
 .formula-for-success {
   font-size: 2rem;
