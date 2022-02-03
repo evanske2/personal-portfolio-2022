@@ -377,7 +377,9 @@ li {
 
 header {
   position: relative;
-  height: 70vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,6 +388,7 @@ header {
           align-items: center;
   max-width: 1260px;
   margin: auto;
+  padding: 110px 0 140px 0;
 }
 header::before {
   content: "";
@@ -891,6 +894,10 @@ footer p {
     width: 90%;
   }
 
+  .welcome-text {
+    width: 100%;
+    padding-right: 40px;
+  }
   .welcome-text h1 {
     font-size: 1.1rem;
   }
@@ -992,12 +999,15 @@ footer p {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .welcome-text {
-    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
   }
   .welcome-text h1 {
     font-size: 1rem;
+  }
+
+  .about-me {
+    margin-top: 100px;
   }
 
   .single-project figure {
