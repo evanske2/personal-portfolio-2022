@@ -40,9 +40,11 @@
   <div class="border-wrapper">
     <header>
 
-      <!-- I am a front-end developer with a passion for continuous growth. With a full chapter as a visual designer behind me, I bring critical-thinking, client-side communication skills and an eye for detail to create responsive and accessible experiences online. 
-        
-        My passion for learning along with my background in design allows me to approach development projects with an open mind, an ability to adapt to new situations and work collaboratively between design and development teams.</p> -->
+      <div class="welcome-text">
+        <h1>
+          I am a <span class="highlighter">front-end developer</span> with a passion for continuous growth. After a full chapter as a <span class="highlighter">visual designer</span>, I bring critical-thinking, client-side communication skills and an eye for detail to create responsive and accessible experiences online.
+        </h1>
+      </div>
     
     
       <nav class="contact-links"> <!-- contact links -->
@@ -93,9 +95,9 @@
     </section> -->
 
 <!-- work section starts -->
-    <section class="wrapper projects">
+    <section class="wrapper projects" id="work">
       
-      <div class="ghost-text" id="work">
+      <div class="ghost-text" id="maincontent">
         <p>Work</p>
       </div>
 
@@ -106,7 +108,7 @@
           <figure>
             <img src="https://placebear.com/300/300" alt="">
           </figure>
-          <div class="project-details">
+          <div class="project-details pad-right">
             <h3>Page Turners</h3>
             <h4>Google Books API, React, Firebase, HTML, SCSS</h4>
             <p>The goal of this project was to build upon core React concepts using routing and third-party data in an agency-style environment, working in a group of developers, collaborating on GitHub and delivering a fully functional product in just under one week. Together with my team we built an app using the Google Books API that allows users to search books by title or author and save books to a reading list where they can track their progress of how many books they've read versus those still to read. For this project I also created the logo and custom genre icons that when clicked, return books based on a genre keyword.</p>
@@ -119,7 +121,7 @@
           <figure>
             <img src="https://placebear.com/300/300" alt="">
           </figure>
-          <div class="project-details">
+          <div class="project-details pad-left">
             <h3>Character Comic Collector</h3>
             <h4>Marvel Comics API, React, HTML, CSS</h4>
             <p>The purpose of this project was to develop an understanding of core React concepts including state, props and components. Using the Marvel Comics API I designed and built an app that allows users to search by their favourite comic character and browse their latest adventures. The app makes calls to both the characters and the comics endpoint of the API to return and map over the data, displaying it to the user with a fun flip animation on hover.</p>
@@ -132,7 +134,7 @@
           <figure>
             <img src="https://placebear.com/300/300" alt="">
           </figure>
-          <div class="project-details">
+          <div class="project-details pad-right">
             <h3>Choose Your Pokémon App</h3>
             <h4>Pokémon API, JavaScript, HTML, CSS</h4>
             <p>The goal of this project was to gain a fundamental understanding of third-party REST APIs, JavaScript, DOM manipulation, UI design and pair programming collaboration using GitHub. Working together with my partner we designed and built an app that allows users to select the Pokémon of their choice from a set of options and display their choice in a container styled to look like an original GameBoy screen. The app is dynamic and responds to the users interaction, adding and removing custom classes for each Pokémon.</p>
@@ -147,16 +149,17 @@
 <!-- work section ends -->
 
 <!-- about section starts -->
-    <section class="wrapper about-me">
+    <section class="wrapper about-me" id="about">
 
-      <div class="ghost-text" id="about">
+      <div class="ghost-text">
         <p>About</p>
       </div>
 
       <div class="introduction">
         <div class="introduction-text">
           <h2 class="highlighter">Nice to meet you!</h2>
-          <p> My name is Karen and I'm a front-end developer with a background in art & design. I recently graduated from Juno College's <span class="bold-link"><a href="https://junocollege.com/bootcamp/web-development-toronto/" target="blank" rel="noreferrer">Web Dev Bootcamp</a></span>. Development allows me to combine my love of problem-solving and making things, and with my past experience in design I'm able to approach projects with an open-mind and an eye for details.</p> 
+          <p> My name is Karen and I'm a front-end developer with a background in art & design. I recently graduated from Juno College's <span class="bold-link"><a href="https://junocollege.com/bootcamp/web-development-toronto/" target="blank" rel="noreferrer">Web Dev Bootcamp</a></span>.</p>
+          <p>Development allows me to combine my love of problem-solving and making things, and with my past experience in design I'm able to approach projects with an open-mind and an eye for details.</p> 
 
           <p>In my free time I love playing frisbee with my dog Wrigley, Minecraft-ing, regular-crafting, reading and eating pizza.</p>
 
@@ -171,21 +174,23 @@
           </div>
         </div>
 
-        <div class="image-collage">
-          <div class="image-1">
-            <img src="./assets/paint-texture.jpg" alt="Closeup of colourful, swirling paint">
-          </div>
-          <div class="image-2">
-            <img src="./assets/me-4.jpg" alt="It's me!">
-          </div>
-          <div class="image-3">
-            <img src="./assets/supervisor.jpg" alt="Cutest dog in the world, he's so handsome, what a good boy">
-          </div>
-          <div class="image-4">
-            <img src="./assets/pizza.jpg" alt="A greasy slice of pepperoni pizza">
-          </div>
-          <div class="image-5">
-            <img src="./assets/minecraft-me.jpg" alt="My Minecraft character">
+        <div class="image-collage-container">
+          <div class="image-collage">
+            <!-- <div class="image-1">
+              <img src="./assets/paint-texture.jpg" alt="Closeup of colourful, swirling paint">
+            </div> -->
+            <div class="image-2">
+              <img src="./assets/me-4.jpg" alt="It's me!">
+            </div>
+            <div class="image-3">
+              <img src="./assets/supervisor.jpg" alt="Cutest dog in the world, he's so handsome, what a good boy">
+            </div>
+            <div class="image-4">
+              <img src="./assets/pizza.jpg" alt="A greasy slice of pepperoni pizza">
+            </div>
+            <div class="image-5">
+              <img src="./assets/minecraft-me.jpg" alt="My Minecraft character">
+            </div>
           </div>
         </div>
 
@@ -194,7 +199,7 @@
 <!-- about section ends -->
 
 <!-- skills section starts -->
-    <section class="wrapper skills-section">
+    <section class="wrapper skills">
       <div class="ghost-text">
         <p>Skills</p>
       </div>
@@ -275,32 +280,37 @@
 <!-- skills section ends -->
 
 <!-- contact section starts -->
-    <section class="wrapper get-in-touch">
-      <div class="ghost-text" id="contact">
+    <section class="wrapper get-in-touch" id="contact">
+      <div class="ghost-text">
         <p>Contact</p>
       </div>
       
       <div>
         <h2 class="highlighter">Get in touch!</h2>
 
-        <div class="contact-form-container">
-          
-          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myyoejwq"
+        <div class="contact-form-container">         
+          <form id="my-form" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/myyoejwq"
             method="post">
             <fieldset class="contact-form" id="fs-frm-inputs">
+
               <label for="full-name">Your Name</label>
               <input type="text" name="name" id="full-name" placeholder="Name" required="">
+
               <label for="email-address">Email Address</label>
               <input type="email" name="_replyto" id="email-address" placeholder="email@website.com" required="">
+
               <label for="message">Message</label>
               <textarea rows="5" name="message" id="message" placeholder="What's up?" required=""></textarea>
+
               <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+
             </fieldset>
-            <input class="submit-button" type="submit" value="Send It!">
+            <button class="submit-button" id="my-form-button">Submit</button>
+            <p id="my-form-status"></p>
           </form>
           
           <div class="contact-text">
-            <p>Thanks for scrolling this far!</p> 
+            <h3>Thanks for scrolling this far!</h3> 
             <p>You can get in touch with me here through the contact form, or catch up with me on <span class="bold-link"><a href="https://www.linkedin.com/in/evanske2/" target="blank" rel="noreferrer">LinkedIn</a></span>.</p>
             <p> Have a great day!</p>
           </div>
@@ -319,5 +329,9 @@
     </div>
   </footer>
 
+
+
+<script src="script.js"></script>
+  
 </body>
 </html>

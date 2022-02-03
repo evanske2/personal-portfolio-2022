@@ -248,7 +248,7 @@ html {
 }
 
 .skip-link:focus {
-  left: 50px;
+  left: 1100px;
 }
 
 html {
@@ -260,6 +260,7 @@ body {
   border-top: 20px solid #fdfaf0;
   position: relative;
   background-color: #fdfaf0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -276,17 +277,13 @@ a {
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
-h1,
 h2 {
   font-family: "Eczar", serif;
   line-height: 1;
-}
-
-h2 {
-  padding-left: 1vw;
   display: inline-block;
   position: relative;
 }
@@ -294,12 +291,12 @@ h2 {
 .highlighter::before {
   background-color: peachpuff;
   content: "";
-  width: 100%;
+  width: 105%;
   height: 18px;
   display: inline-block;
   position: absolute;
   bottom: 0px;
-  left: 10px;
+  left: -3px;
   z-index: -10;
 }
 
@@ -315,6 +312,9 @@ h2 {
 }
 
 .skip-link {
+  background-color: peru;
+  color: #fdfaf0;
+  font-family: "Poppins", sans-serif;
   padding: 10px 20px;
   margin-top: 20px;
   text-align: center;
@@ -329,8 +329,18 @@ li {
 .projects,
 .skills,
 .get-in-touch {
-  margin: 70px auto;
-  padding-bottom: 40px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.get-in-touch {
+  margin-bottom: 40px;
+  margin-top: -40px;
+}
+
+.skills {
+  padding-top: 90px;
 }
 
 .ghost-text {
@@ -345,13 +355,6 @@ li {
   text-transform: uppercase;
   letter-spacing: 40px;
   margin-left: -20px;
-}
-.ghost-text p span {
-  display: inline-block;
-  width: 12%;
-}
-.ghost-text p span span.skinny {
-  width: 5%;
 }
 
 .bold-link a {
@@ -375,7 +378,50 @@ li {
 header {
   position: relative;
   height: 70vh;
-  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1260px;
+  margin: auto;
+}
+header::before {
+  content: "";
+  background-image: url("../assets/paint-texture-reversed.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: -10;
+}
+
+.welcome-text {
+  width: 70%;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+.welcome-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.welcome-text h1 span {
+  position: relative;
+}
+.welcome-text h1 .highlighter::before {
+  z-index: 0;
+  left: -3px;
+  bottom: 5px;
+  width: 103%;
+  height: 14px;
+  mix-blend-mode: multiply;
 }
 
 .nav-links {
@@ -438,13 +484,26 @@ header {
 .nav-links ul a {
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
+  position: relative;
+  text-decoration: none;
+}
+.nav-links ul a:hover:before, .nav-links ul a:hover:focus {
+  content: "";
+  background-color: #f5b073;
+  width: 110%;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  bottom: 2px;
+  left: -3px;
+  z-index: -10;
 }
 
 .contact-links {
   position: absolute;
   bottom: 30px;
   right: 0;
-  background-color: peachpuff;
+  background-color: #fdfaf0;
 }
 .contact-links ul {
   display: -webkit-box;
@@ -457,6 +516,10 @@ header {
 .contact-links ul i {
   font-size: 1.2rem;
   padding: 10px 20px;
+  color: #f5b073;
+}
+.contact-links ul i:hover, .contact-links ul i:focus {
+  color: #fadfb5;
 }
 
 .scrolling-text-container {
@@ -520,6 +583,12 @@ footer p {
   border-radius: 50%;
   max-width: 100%;
 }
+.single-project .pad-left {
+  padding-left: 40px;
+}
+.single-project .pad-right {
+  padding-right: 40px;
+}
 .single-project .project-details {
   width: 70%;
 }
@@ -574,6 +643,7 @@ footer p {
 }
 .introduction p {
   padding-left: 1vw;
+  padding-right: 100px;
   margin: 20px 0;
   line-height: 1.5;
   max-width: 660px;
@@ -600,13 +670,12 @@ footer p {
 
 .image-collage {
   position: relative;
-  margin-left: 120px;
-}
-.image-collage .image-1 {
   width: 300px;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 50%;
   z-index: -10;
+  background-image: url("../assets/paint-texture.jpg");
+  background-size: cover;
 }
 .image-collage .image-2 {
   width: 200px;
@@ -727,6 +796,11 @@ footer p {
   line-height: 1.5;
   margin-top: 15px;
 }
+.contact-form-container .contact-text h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
 
 .contact-form {
   display: -webkit-box;
@@ -738,7 +812,6 @@ footer p {
           flex-direction: column;
   margin-top: 40px;
   border: none;
-  max-width: 600px;
 }
 .contact-form label {
   font-family: "Courier Prime", monospace;
@@ -797,7 +870,130 @@ footer p {
 
 /* Big screens */
 /* Desktops */
+@media (min-width: 1200px) {
+  .contact-form {
+    max-width: 600px;
+  }
+}
 /* Small desktops */
 /* Large tablet */
+@media (max-width: 940px) {
+  .nav-links {
+    width: 75%;
+  }
+
+  .tech-icons .icon-item,
+.design-icons .icon-item {
+    width: 25%;
+  }
+}
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .nav-links {
+    width: 90%;
+  }
+
+  .welcome-text h1 {
+    font-size: 1.1rem;
+  }
+
+  .single-project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .single-project figure {
+    margin-left: 0;
+  }
+  .single-project .project-details {
+    width: 100%;
+  }
+  .single-project .pad-left,
+.single-project .pad-right {
+    padding: 0;
+  }
+
+  .introduction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .introduction .image-collage-container {
+    width: 100%;
+    margin-top: -220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: -120px;
+  }
+  .introduction .image-collage {
+    width: 220px;
+    height: 220px;
+  }
+  .introduction .image-collage .image-2 {
+    width: 140px;
+    height: 140px;
+    top: 5px;
+    right: 160px;
+  }
+  .introduction .image-collage .image-3 {
+    width: 110px;
+    height: 110px;
+    top: 90px;
+    right: -50px;
+  }
+  .introduction .image-collage .image-4 {
+    width: 80px;
+    height: 80px;
+    top: 150px;
+    right: 30px;
+  }
+  .introduction .image-collage .image-5 {
+    width: 60px;
+    height: 60px;
+    top: -15px;
+    right: 130px;
+  }
+
+  .tech-icons .icon-item,
+.design-icons .icon-item {
+    width: 33.33%;
+  }
+
+  .contact-form-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contact-form-container form,
+.contact-form-container .contact-text {
+    width: 100%;
+  }
+  .contact-form-container .contact-text {
+    margin-top: 40px;
+  }
+  .contact-form-container .submit-button {
+    margin-left: 0;
+  }
+
+  fieldset {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .tech-icons .icon-item,
+.design-icons .icon-item {
+    width: 50%;
+  }
+}

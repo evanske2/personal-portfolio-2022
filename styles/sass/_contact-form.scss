@@ -14,7 +14,11 @@
       margin-top: 15px;
     }
 
-    
+    h3 {
+      font-family: $base-font;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
   }
 }
 
@@ -23,7 +27,6 @@
   flex-direction: column;
   margin-top: 40px;
   border: none;
-  max-width: 600px;
 
   label {
     font-family: $special-font;

@@ -4,6 +4,7 @@
 
   p {
     padding-left: 1vw;
+    padding-right: 100px;
     margin: 20px 0;
     line-height: 1.5;
     max-width: 660px;
@@ -29,14 +30,19 @@
 
 .image-collage {
   position: relative;
-  margin-left: 120px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: -10;
+  background-image: url('../assets/paint-texture.jpg');
+  background-size: cover;
 
-  .image-1 {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    z-index: -10;    
-  }
+  // .image-1 {
+  //   width: 300px;
+  //   height: 300px;
+  //   border-radius: 10px;
+  //   z-index: -10;    
+  // }
 
   .image-2 {
     width: 200px;
