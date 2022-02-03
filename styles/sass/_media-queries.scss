@@ -46,6 +46,7 @@
 
     figure {
       margin-left: 0;
+      text-align: center;
     }
     
     .project-details {
@@ -142,11 +143,35 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .welcome-text {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    h1 {
+      font-size: 1rem;
+    }
+  }
+  
+  .single-project figure {
+    width: 100%;
+  }
+
   .tech-icons,
   .design-icons {
     
     .icon-item {
       width: 50%;
     }
+  }
+
+  .ghost-text p {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    margin-left: -10px;
+  }
+
+  .introduction p {
+    padding-right: 0;
   }
 }
