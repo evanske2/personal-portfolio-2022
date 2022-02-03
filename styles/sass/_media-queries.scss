@@ -1,7 +1,7 @@
 /* Big screens */
-@media (min-width: 1400px) {
+// @media (min-width: 1400px) {
 
-}
+// }
 
 /* Desktops */
 @media (min-width: 1200px) {
@@ -11,9 +11,9 @@
 }
 
 /* Small desktops */
-@media (max-width: 1080px) {
+// @media (max-width: 1080px) {
 
-}
+// }
 
 /* Large tablet */
 @media (max-width: 940px) {
@@ -63,8 +63,7 @@
     .pad-left,
     .pad-right {
       padding: 0;
-    }
-  
+    }  
   }
 
   .about-me {
@@ -159,8 +158,7 @@
     margin-left: -10px;
   }
 
-  .introduction {
-  
+  .introduction {  
     h2 {
       padding-top: 10px;
     }

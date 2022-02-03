@@ -527,16 +527,6 @@ header::before {
   width: 100%;
 }
 
-.peace-hand {
-  position: absolute;
-  right: 75px;
-  font-size: 2.5rem;
-  bottom: 86px;
-  color: #f5b073;
-  -webkit-transform: rotate(15deg);
-          transform: rotate(15deg);
-}
-
 .contact-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
