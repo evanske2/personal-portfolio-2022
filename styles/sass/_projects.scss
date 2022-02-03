@@ -5,14 +5,9 @@
   margin: 50px auto;
 
   figure {
-
-    // max-width: 250px;
-    width: 30%;
-    // height: 250px;
+    width: 40%;
 
     img {
-      object-fit: cover;
-      border-radius: 50%;
       max-width: 100%;
     }
   }
@@ -26,7 +21,7 @@
   }
 
   .project-details {
-    width: 70%;
+    width: 60%;
   }
 
   h3,

@@ -502,12 +502,43 @@ header::before {
   z-index: -10;
 }
 
-.contact-links {
+.spinning-text-container {
   position: absolute;
-  bottom: 30px;
-  right: 0;
-  background-color: #fdfaf0;
+  bottom: 10px;
+  right: 20px;
+  max-width: 140px;
 }
+
+@-webkit-keyframes badge {
+  from {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes badge {
+  from {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+.spinning-text img {
+  position: relative;
+  -webkit-animation: badge 30s linear infinite;
+          animation: badge 30s linear infinite;
+  width: 100%;
+}
+
+.peace-hand {
+  position: absolute;
+  right: 75px;
+  font-size: 2.5rem;
+  bottom: 86px;
+  color: #f5b073;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
 .contact-links ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,44 +546,15 @@ header::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 .contact-links ul i {
   font-size: 1.2rem;
-  padding: 10px 20px;
+  padding-right: 20px;
   color: #f5b073;
 }
 .contact-links ul i:hover, .contact-links ul i:focus {
   color: #fadfb5;
-}
-
-.scrolling-text-container {
-  overflow: hidden;
-  color: whitesmoke;
-  letter-spacing: 5px;
-}
-.scrolling-text-container .scrolling-text {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
-  -webkit-animation: scrolling-text-animation 15s linear infinite;
-  animation: scrolling-text-animation 15s linear infinite;
-}
-@-webkit-keyframes scrolling-text-animation {
-  from {
-    -webkit-transform: translateX(100%);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-  }
-}
-@keyframes scrolling-text-animation {
-  from {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-  }
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-  }
 }
 
 footer {
@@ -576,12 +578,9 @@ footer p {
   margin: 50px auto;
 }
 .single-project figure {
-  width: 30%;
+  width: 40%;
 }
 .single-project figure img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
   max-width: 100%;
 }
 .single-project .pad-left {
@@ -591,7 +590,7 @@ footer p {
   padding-right: 40px;
 }
 .single-project .project-details {
-  width: 70%;
+  width: 60%;
 }
 .single-project h3,
 .single-project h4 {
@@ -669,72 +668,11 @@ footer p {
   font-size: 1.2rem;
 }
 
-.image-collage {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  z-index: -10;
-  background-image: url("../assets/paint-texture.jpg");
-  background-size: cover;
+.image-collage-container {
+  width: 40%;
 }
-.image-collage .image-2 {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: -62px;
-  right: 150px;
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
-  mix-blend-mode: luminosity;
-}
-.image-collage .image-3 {
-  width: 150px;
-  height: 150px;
-  z-index: 10;
-  position: absolute;
-  top: 130px;
-  right: -90px;
-  -webkit-transform: rotate(10deg);
-          transform: rotate(10deg);
-  mix-blend-mode: darken;
-  opacity: 0.9;
-}
-.image-collage .image-4 {
-  width: 100px;
-  height: 100px;
-  z-index: 10;
-  position: absolute;
-  top: 210px;
-  right: 20px;
-  -webkit-transform: rotate(-10deg);
-          transform: rotate(-10deg);
-  opacity: 0.8;
-}
-.image-collage .image-4 img {
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-.image-collage .image-5 {
-  width: 70px;
-  height: 70px;
-  z-index: 10;
-  position: absolute;
-  top: 105px;
-  right: 270px;
-  -webkit-transform: rotate(10deg);
-  transform: rotate(-5deg);
-}
-.image-collage .image-5 img {
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-.image-collage img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
+.image-collage-container img {
+  max-width: 100%;
 }
 
 .icon-container {
