@@ -25,12 +25,11 @@ header {
 
 .welcome-text {
   width: 70%;
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 40px;
 
   h1 {
     font-family: $base-font;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     font-weight: 300;
     
@@ -106,7 +105,7 @@ header {
       text-decoration: none;
 
       &:hover:before,
-      &:hover:focus {
+      &:focus:before {
         content: '';
         background-color: $dark-orange;
         width: 110%;

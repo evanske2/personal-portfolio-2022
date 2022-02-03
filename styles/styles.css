@@ -260,7 +260,6 @@ body {
   border-top: 20px solid #fdfaf0;
   position: relative;
   background-color: #fdfaf0;
-  overflow-x: hidden;
 }
 
 h1,
@@ -406,12 +405,11 @@ header::before {
 
 .welcome-text {
   width: 70%;
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 40px;
 }
 .welcome-text h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -490,7 +488,7 @@ header::before {
   position: relative;
   text-decoration: none;
 }
-.nav-links ul a:hover:before, .nav-links ul a:hover:focus {
+.nav-links ul a:hover:before, .nav-links ul a:focus:before {
   content: "";
   background-color: #f5b073;
   width: 110%;
@@ -821,6 +819,10 @@ footer p {
     width: 75%;
   }
 
+  .welcome-text {
+    width: 100%;
+  }
+
   .tech-icons .icon-item,
 .design-icons .icon-item {
     width: 25%;
@@ -832,12 +834,8 @@ footer p {
     width: 90%;
   }
 
-  .welcome-text {
-    width: 100%;
-    padding-right: 40px;
-  }
   .welcome-text h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .single-project {
@@ -861,6 +859,10 @@ footer p {
     padding: 0;
   }
 
+  .about-me {
+    padding-top: 160px;
+  }
+
   .introduction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -869,42 +871,8 @@ footer p {
   }
   .introduction .image-collage-container {
     width: 100%;
-    margin-top: -220px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin-left: -120px;
-  }
-  .introduction .image-collage {
-    width: 220px;
-    height: 220px;
-  }
-  .introduction .image-collage .image-2 {
-    width: 140px;
-    height: 140px;
-    top: 5px;
-    right: 160px;
-  }
-  .introduction .image-collage .image-3 {
-    width: 110px;
-    height: 110px;
-    top: 90px;
-    right: -50px;
-  }
-  .introduction .image-collage .image-4 {
-    width: 80px;
-    height: 80px;
-    top: 150px;
-    right: 30px;
-  }
-  .introduction .image-collage .image-5 {
-    width: 60px;
-    height: 60px;
-    top: -15px;
-    right: 130px;
+    margin-top: -400px;
+    z-index: -10;
   }
 
   .tech-icons .icon-item,
@@ -936,12 +904,29 @@ footer p {
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .nav-links {
+    padding-bottom: 15px;
+  }
+  .nav-links .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .nav-links .logo {
+    margin-bottom: 20px;
+  }
+  .nav-links ul {
+    width: 90%;
+  }
+
   .welcome-text {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .welcome-text h1 {
-    font-size: 1rem;
+    padding-top: 80px;
   }
 
   .about-me {
@@ -958,7 +943,7 @@ footer p {
   }
 
   .ghost-text p {
-    font-size: 2.5rem;
+    font-size: 2.85rem;
     letter-spacing: 10px;
     margin-left: -10px;
   }

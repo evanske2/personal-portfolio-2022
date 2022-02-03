@@ -21,6 +21,10 @@
     width: 75%;
   }
 
+  .welcome-text {
+    width: 100%;
+  }
+
   .tech-icons,
   .design-icons {
     
@@ -37,11 +41,9 @@
   }
 
   .welcome-text {
-    width: 100%;
-    padding-right: 40px;
     
     h1 {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
   }
 
@@ -65,53 +67,17 @@
   
   }
 
+  .about-me {
+    padding-top: 160px;
+  }
+
   .introduction {
     flex-direction: column-reverse;
 
     .image-collage-container {
       width: 100%;
-      margin-top: -220px;
-      display: flex;
-      justify-content: flex-end;
-      margin-left: -120px;
-    }
-
-    .image-collage {
-      width: 220px;
-      height: 220px;
-
-      // .image-1 {
-      //   width: 200px;
-      //   height: 200px;
-      // }
-
-      .image-2 {
-        width: 140px;
-        height: 140px;
-        top: 5px;
-        right: 160px;
-      }
-
-      .image-3 {
-        width: 110px;
-        height: 110px;
-        top: 90px;
-        right: -50px;
-      }
-
-      .image-4 {
-        width: 80px;
-        height: 80px;
-        top: 150px;
-        right: 30px;
-      }
-
-      .image-5 {
-        width: 60px;
-        height: 60px;
-        top: -15px;
-        right: 130px;
-      }
+      margin-top: -400px;
+      z-index: -10;
     }
   }
   
@@ -148,13 +114,27 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .nav-links {
+    padding-bottom: 15px;
+
+    .wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      width: 90%;
+    }
+  }
+  
   .welcome-text {
     padding-left: 20px;
     padding-right: 20px;
-
-    h1 {
-      font-size: 1rem;
-    }
+    padding-top: 80px;
   }
 
   .about-me {
@@ -174,7 +154,7 @@
   }
 
   .ghost-text p {
-    font-size: 2.5rem;
+    font-size: 2.85rem;
     letter-spacing: 10px;
     margin-left: -10px;
   }
