@@ -581,12 +581,6 @@ footer p {
 .single-project figure img {
   max-width: 100%;
 }
-.single-project .pad-left {
-  padding-left: 40px;
-}
-.single-project .pad-right {
-  padding-right: 40px;
-}
 .single-project .project-details {
   width: 60%;
 }
@@ -611,6 +605,18 @@ footer p {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 0.8rem;
+}
+.single-project .frens-text {
+  font-family: "Courier Prime", monospace;
+  font-size: 0.7rem;
+  color: peru;
+}
+.single-project .frens-text a {
+  color: peru;
+  padding-right: 0;
+}
+.single-project .frens-text a:hover::before, .single-project .frens-text a:focus::before {
+  width: 107%;
 }
 .single-project a {
   font-family: "Courier Prime", monospace;
@@ -803,6 +809,15 @@ footer p {
 .submit-button:hover, .submit-button:focus {
   cursor: pointer;
   background-color: #c07832;
+}
+
+.form-message {
+  padding-top: 40px;
+  font-weight: 600;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  color: #f5b073;
 }
 
 /* Big screens */

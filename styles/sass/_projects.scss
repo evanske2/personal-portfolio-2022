@@ -12,14 +12,6 @@
     }
   }
 
-  .pad-left {
-    padding-left: 40px;
-  }
-
-  .pad-right {
-    padding-right: 40px;
-  }
-
   .project-details {
     width: 60%;
   }
@@ -48,6 +40,22 @@
     margin: 20px 0;
     line-height: 1.5;
     font-size: 0.8rem;
+  }
+
+  .frens-text {
+    font-family: $special-font;
+    font-size: 0.7rem;
+    color: $brown;
+
+    a {
+      color: $brown;
+      padding-right: 0;
+
+      &:hover::before,
+      &:focus::before {
+        width: 107%;
+      }
+    }
   }
 
   a {

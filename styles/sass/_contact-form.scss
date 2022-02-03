@@ -58,19 +58,28 @@
 }
 
 .submit-button {
-    border: none;
-    padding: 6px 20px 4px 20px;
-    font-family: $special-font;
-    font-style: italic;
-    font-size: 1rem;
-    color: white;
-    background-color: $brown;
-    margin-left: 20px;
-    align-self: flex-end;
+  border: none;
+  padding: 6px 20px 4px 20px;
+  font-family: $special-font;
+  font-style: italic;
+  font-size: 1rem;
+  color: white;
+  background-color: $brown;
+  margin-left: 20px;
+  align-self: flex-end;
 
-    &:hover,
-    &:focus {
-      cursor: pointer;
-      background-color: darken($brown, 5);
-    }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: darken($brown, 5);
   }
+}
+
+.form-message {
+  padding-top: 40px;
+  font-weight: 600;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  color: $dark-orange;
+}
