@@ -963,6 +963,9 @@ footer p {
     margin-left: -10px;
   }
 
+  .introduction h2 {
+    padding-top: 10px;
+  }
   .introduction p {
     padding-right: 0;
   }
